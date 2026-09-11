@@ -1,2 +1,4 @@
+@import url(./base/font.css);
 @import url(./base/reset.css);
 @import url(./base/variable.css);
+@import url(./component/navbar.css);
