@@ -1,0 +1,16 @@
+body {
+    font-family: var(--font-family-primary);
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-width: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: visible;
+}

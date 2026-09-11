@@ -1,0 +1,21 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: var(--border-width) solid var(--border-primary);
+    padding-block: var(--btn-padding-block);
+    padding-inline: var(--btn-padding-inline);
+
+    color: var(--text-primary);
+    
+    cursor: pointer;
+}
+
+.btn--ghost {
+    font-size: var(--font-size-rg);
+    text-transform: uppercase;
+    
+    color: var(--text-muted);
+    background-color: var(--bg-primary);
+}
