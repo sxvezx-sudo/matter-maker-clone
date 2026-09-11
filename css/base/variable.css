@@ -1,0 +1,9 @@
+@import url(./font.css);
+
+:root {
+    --font-family-primary: "Helvetica Neue";
+}
+
+* {
+    font-family: var(--font-family-primary);
+}
