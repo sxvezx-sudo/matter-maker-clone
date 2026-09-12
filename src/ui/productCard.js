@@ -30,7 +30,7 @@ export function renderProductCard(product) {
     
     // Set Attribute // 
     imgWrapper.setAttribute("href", "#");
-    img.setAttribute("src", "/assets/image/collection/collection -11 copy.jpg");
+    img.setAttribute("src", "/assets/image/products/p005/main.jpg");
     img.setAttribute("alt", "");
     nameWrapper.setAttribute("href", "#");
     iconWrapper.setAttribute("href", "#");
@@ -54,49 +54,3 @@ export function renderProductCard(product) {
     li.append(card);
     slider.appendChild(li);
 }
-
-export function renderCategory(product) {
-    const category = document.querySelector(".category");
-    category.innerHTML = "";
-
-    // Create Elements //
-    const categoryItem = document.createElement("a");
-    const img = document.createElement("img");
-    const text = document.createElement("span");
-
-    // Add Class lists //
-    categoryItem.classList.add("category__item");
-    img.classList.add("category__img");
-    text.classList.add("category__text");
-
-    // Set Attribute //
-    categoryItem.setAttribute("href", "");
-    img.setAttribute("src", "/assets/image/category.webp");
-    img.setAttribute("alt", "");
-
-    // Text Content // 
-    text.textContent = "Men";
-
-    // Append them //
-    categoryItem.append(img, text);
-    category.appendChild(categoryItem);
-}
-
-            // <div class="category">
-            //     <a href="#" class="category__item">
-            //         <img src="/assets/image/category.webp" alt="" class="category__img">
-            //         <span class="category__text">Men</span>
-            //     </a>
-            //     <a href="#" class="category__item">
-            //         <img src="/assets/image/category.webp" alt="" class="category__img">
-            //         <span class="category__text">Women</span>
-            //     </a>
-            //     <a href="#" class="category__item">
-            //         <img src="/assets/image/category.webp" alt="" class="category__img">
-            //         <span class="category__text">Accessories</span>
-            //     </a>
-            //     <a href="#" class="category__item">
-            //         <img src="/assets/image/category.webp" alt="" class="category__img">
-            //         <span class="category__text">Jewelry</span>
-            //     </a>
-            // </div>

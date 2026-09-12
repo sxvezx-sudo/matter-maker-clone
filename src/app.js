@@ -1,8 +1,9 @@
-import { renderProductCard,
-         renderCategory } from "./ui/matter-maker-ui.js"
+import { renderCollection } from "./ui/productCollection.js"
+import { renderProductCard } from "./ui/productCard.js"
+import { renderCategory } from "./ui/productCategory.js"
 
 window.addEventListener("keyup", (e) => {
     if(e.key !== "Enter") { return };
-    renderProductCard()
+    renderCollection()
     renderCategory()
 })

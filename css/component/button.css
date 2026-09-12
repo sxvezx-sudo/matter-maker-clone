@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-.btn--ghost {
+.btn--muted {
     font-size: var(--font-size-rg);
     text-transform: uppercase;
     
