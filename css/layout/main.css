@@ -6,7 +6,7 @@
     min-width: 0;
 }
 
-.collection {
+.collection__item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -33,7 +33,7 @@
     object-fit: cover;
 }
 
-.collection .btn {
+.collection__item .btn {
     position: absolute;
 
     bottom: 0;

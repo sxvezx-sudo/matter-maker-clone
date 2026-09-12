@@ -12,7 +12,7 @@ export function renderCollection(collectionData) {
     const btn = document.createElement("span");
 
     // Add Class lists //
-    collection.classList.add("collection");
+    collection.classList.add("collection__item");
     collectionSlider.classList.add("collection__slider");
     videoWrapper.classList.add("collection__video-wrap");
     video.classList.add("collection__video");
@@ -26,7 +26,7 @@ export function renderCollection(collectionData) {
     video.autoplay = true;
     video.playsInline = true;
     video.play()
-    
+
     // video.setAttribute("autoplay");
     // video.setAttribute("muted");
     // video.setAttribute("loop");
