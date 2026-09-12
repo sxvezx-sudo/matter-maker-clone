@@ -1,5 +1,3 @@
-import { renderProductCard } from "./productCard.js"
-
 export function renderCollection(collectionData) {
     const collectionList = document.querySelector(".collection-list");
     collectionList.innerHTML = "";
@@ -25,7 +23,7 @@ export function renderCollection(collectionData) {
     video.loop = true;
     video.autoplay = true;
     video.playsInline = true;
-    video.play()
+    // video.play()
 
     // video.setAttribute("autoplay");
     // video.setAttribute("muted");
@@ -38,17 +36,5 @@ export function renderCollection(collectionData) {
     // Append them //
     videoWrapper.append(video,btn);
     collection.append(videoWrapper, collectionSlider);
-    collectionList.appendChild(collection);
-    renderProductCard()
+    collectionList.append(collection);
 }
-
-            // <div class="collection-list">
-            //     <article class="collection">
-
-            //         <a href="#" class="collection__video-wrap">
-            //             <video src="/assets/video/haunteddollhouse.mp4" class="collection__video" autoplay muted loop playsinline></video>
-            //             <span class="btn btn--muted">Buy Now</span>
-            //         </a>
-
-            //     </article>
-            // </div>

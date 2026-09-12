@@ -1,6 +1,4 @@
 export function renderProductCard(product) {
-    const slider = document.querySelector(".collection__slider");
-    slider.innerHTML = "";
 
     // Create Elements //
     const li = document.createElement("li");
@@ -30,19 +28,19 @@ export function renderProductCard(product) {
     
     // Set Attribute // 
     imgWrapper.setAttribute("href", "#");
-    img.setAttribute("src", "/assets/image/products/p005/main.jpg");
-    img.setAttribute("alt", "");
+    img.setAttribute("src", product.images.main);
+    img.setAttribute("alt", product.name);
     nameWrapper.setAttribute("href", "#");
     iconWrapper.setAttribute("href", "#");
-    iconWrapper.setAttribute("aria-label", "");
-    price.setAttribute("data-price", 1790);
+    iconWrapper.setAttribute("aria-label", "favourite");
+    price.setAttribute("data-price", product.price);
 
     // Set Data // 
     icon.dataset.lucide = "heart";
 
     // Text Content //
-    name.textContent = "Double Layer Jersey Dress";
-    price.textContent = "1,790 THB";
+    name.textContent = product.name;
+    price.textContent = `${product.price} THB`;
 
     // Appemd them //
     imgWrapper.append(img);
@@ -52,5 +50,5 @@ export function renderProductCard(product) {
     contentContainner.append(contentWrapper, price);
     card.append(imgWrapper, contentContainner);
     li.append(card);
-    slider.appendChild(li);
+    return li
 }
