@@ -4,7 +4,6 @@ import { renderCategory } from "./ui/productCategory.js"
 import { getProducts } from "./data/products.js"
 import { getCollectionData,
          getCollection } from "./data/collections.js"
-
 const products = getProducts()
 console.log(products)
 const collectionData = getCollectionData()
@@ -12,6 +11,7 @@ console.log(collectionData)
 const collections = getCollection(products, collectionData)
 console.log(collections)
 const collectionList = document.querySelector(".collection-list")
+collectionList.innerHTML = ""
 const category = document.querySelector(".category");
 
 window.addEventListener("keyup", (e) => {

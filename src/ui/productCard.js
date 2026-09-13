@@ -1,3 +1,5 @@
+import { createIcon } from "../utils/icon.js";
+
 export function createProductCard(product) {
 
     // Create Elements //
@@ -12,7 +14,9 @@ export function createProductCard(product) {
     const nameWrapper = document.createElement("a");
     const name = document.createElement("h3");
     const iconWrapper = document.createElement("a");
-    const icon = document.createElement("svg");
+    const icon = createIcon("heart", "product-card__icon");
+
+    // Create Icons //
 
     // Add Class lists // 
     li.classList.add("collection__slide-item")
@@ -26,7 +30,6 @@ export function createProductCard(product) {
     nameWrapper.classList.add("product-card__name-wrapper");
     name.classList.add("product-card__name");
     iconWrapper.classList.add("product-card__icon-wrapper");
-    icon.classList.add("product-card__icon");
     
     // Set Attribute // 
     imgWrapper.setAttribute("href", "#");
