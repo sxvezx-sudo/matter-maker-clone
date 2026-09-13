@@ -28,7 +28,7 @@
 
     object-fit: cover;
 
-    transition: opacity 0.3s ease-in;
+    transition-duration: 0.5s;
 
 }
 
@@ -41,7 +41,7 @@
     inset: 0;
     opacity: 0;
 
-    transition: opacity 0.2s ease-in;
+    transition-duration: 0.5s;
 }
 
 .product-card__img-wrapper:hover .product-card__img--hover {

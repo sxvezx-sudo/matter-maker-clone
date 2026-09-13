@@ -29,7 +29,7 @@ const handleDocumentLoaded = () => {
 
         // Render Product Card //
         const products = collection.products;
-        const sliderListMap = document.querySelectorAll(".collection__slider");
+        const sliderListMap = collectionItem.querySelectorAll(".collection__slider");
         products.forEach(product => {
             const sliderItem = createProductCard(product);
             sliderListMap.forEach(sliderList => {
@@ -43,17 +43,11 @@ const handleDocumentLoaded = () => {
 
     productImages.forEach(card => {
         card.addEventListener("mouseenter", (e) => {
-            const classList = e.target.classList;
-            if(classList !== "product-card__img-wrapper") { return }
-
             const mainImg = e.target.querySelector("img");
             console.log(mainImg)
             mainImg.classList.add("product-card__img--fade");
         });
         card.addEventListener("mouseleave", (e) => {
-            const classList = e.target.classList;
-            if(classList !== "product-card__img-wrapper") { return }
-
             const mainImg = e.target.querySelector("img");
             mainImg.classList.remove("product-card__img--fade");
         });
