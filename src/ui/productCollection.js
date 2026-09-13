@@ -35,7 +35,7 @@ export function createCollection(collectionData) {
     collection.dataset.collectionId = collectionData.id
 
     // Append them //
-    videoWrapper.append(video,btn);
+    videoWrapper.append(video, btn);
     collection.append(videoWrapper, collectionSlider);
     return collection
 }

@@ -36,7 +36,7 @@
 .collection__item .btn {
     position: absolute;
 
-    bottom: 0;
+    transform: translateY(20rem);
     margin-bottom: var(--spacing-3xl);
     
     z-index: 2;

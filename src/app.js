@@ -19,6 +19,7 @@ window.addEventListener("keyup", (e) => {
 
     collections.forEach(col => {
         const collection = (createCollection(col))
+        console.log(collection)
         collectionList.append(collection);
         renderCategory()
 
