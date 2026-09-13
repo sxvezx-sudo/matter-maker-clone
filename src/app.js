@@ -37,24 +37,6 @@ const handleDocumentLoaded = () => {
             });
         });
     });
-
-    // Add Events Listener Hover Card Interaction //
-    const productImages = document.querySelectorAll(".product-card__img-wrapper");
-
-    productImages.forEach(card => {
-        card.addEventListener("mouseenter", (e) => {
-            const mainImg = e.target.querySelector("img");
-            console.log(mainImg)
-            mainImg.classList.add("product-card__img--fade");
-        });
-        card.addEventListener("mouseleave", (e) => {
-            const mainImg = e.target.querySelector("img");
-            mainImg.classList.remove("product-card__img--fade");
-        });
-    });
 };
 
 document.addEventListener("DOMContentLoaded", handleDocumentLoaded)
-
-
-

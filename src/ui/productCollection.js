@@ -1,32 +1,32 @@
 export function createCollection(collectionData) {
-
+    
     // Create Elements // 
     const collection = document.createElement("article");
     const collectionSlider = document.createElement("ul");
     const videoWrapper = document.createElement("a");
-    const video = document.createElement("video");
     const btn = document.createElement("span");
+    let bannerMedia;
+    if(collectionData.banner.video) {
+        bannerMedia = document.createElement("video");
+            bannerMedia.muted = true;
+            bannerMedia.loop = true;
+            bannerMedia.autoplay = true;
+            bannerMedia.playsInline = true;
+    }
+    if(collectionData.banner.image) {
+        bannerMedia = document.createElement("img");
+    }
 
     // Add Class lists //
     collection.classList.add("collection__item");
     collectionSlider.classList.add("collection__slider");
     videoWrapper.classList.add("collection__video-wrap");
-    video.classList.add("collection__video");
+    bannerMedia.classList.add("collection__video");
     btn.classList.add("btn", "btn--muted");
     
     // Set Attributes //
     videoWrapper.setAttribute("href", "");
-    video.setAttribute("src", "/assets/video/haunteddollhouse.mp4");
-    video.muted = true;
-    video.loop = true;
-    video.autoplay = true;
-    video.playsInline = true;
-    // video.play()
-
-    // video.setAttribute("autoplay");
-    // video.setAttribute("muted");
-    // video.setAttribute("loop");
-    // video.setAttribute("playsinline");
+    bannerMedia.src = collectionData.banner.video ?? collectionData.banner.image
 
     // Text Contnet //
     btn.textContent = "Buy Now";
@@ -35,7 +35,7 @@ export function createCollection(collectionData) {
     collection.dataset.collectionId = collectionData.id
 
     // Append them //
-    videoWrapper.append(video, btn);
+    videoWrapper.append(bannerMedia, btn);
     collection.append(videoWrapper, collectionSlider);
     return collection
 }

@@ -43,11 +43,23 @@ export function createProductCard(product) {
     price.setAttribute("data-price", product.price);
 
     // Set Data // 
+    card.dataset.id = product.id;
     icon.dataset.lucide = "heart";
 
     // Text Content //
     name.textContent = product.name;
     price.textContent = `${product.price.toLocaleString()} THB`;
+
+    // Add Events Listener //
+    imgWrapper.addEventListener("mouseenter", (e) => {
+        const mainImg = imgWrapper.querySelector("img");
+        mainImg.classList.add("product-card__img--fade");
+    });
+
+    imgWrapper.addEventListener("mouseleave", (e) => {
+        const mainImg = imgWrapper.querySelector("img");
+        mainImg.classList.remove("product-card__img--fade");
+    });
 
     // Appemd them //
     imgWrapper.append(img, imgHover);

@@ -21,7 +21,7 @@
     width: 100%;
     height: calc(100vh - var(--nav-height));
 
-    border: var(--border-width) solid var(--border-primary);
+    border-bottom: var(--border-width) solid var(--border-primary);
 }
 
 .collection__video {
