@@ -1,10 +1,11 @@
-export function renderProductCard(product) {
+export function createProductCard(product) {
 
     // Create Elements //
     const li = document.createElement("li");
     const card = document.createElement("article");
     const imgWrapper = document.createElement("a");
     const img = document.createElement("img");
+    const imgHover = document.createElement("img");
     const contentContainner = document.createElement("div");
     const price = document.createElement("span");
     const contentWrapper = document.createElement("div");
@@ -18,6 +19,7 @@ export function renderProductCard(product) {
     card.classList.add("product-card");
     imgWrapper.classList.add("product-card__img-wrapper");
     img.classList.add("product-card__img");
+    imgHover.classList.add("product-card__img", "product-card__img--hover");
     contentContainner.classList.add("product-card__content");
     price.classList.add("product-card__price");
     contentWrapper.classList.add("product-card__content-wrapper");
@@ -30,6 +32,8 @@ export function renderProductCard(product) {
     imgWrapper.setAttribute("href", "#");
     img.setAttribute("src", product.images.main);
     img.setAttribute("alt", product.name);
+    imgHover.setAttribute("src", product.images.front);
+    imgHover.setAttribute("alt", product.name);
     nameWrapper.setAttribute("href", "#");
     iconWrapper.setAttribute("href", "#");
     iconWrapper.setAttribute("aria-label", "favourite");
@@ -43,7 +47,7 @@ export function renderProductCard(product) {
     price.textContent = `${product.price} THB`;
 
     // Appemd them //
-    imgWrapper.append(img);
+    imgWrapper.append(img, imgHover);
     nameWrapper.append(name);
     iconWrapper.append(icon);
     contentWrapper.append(nameWrapper, iconWrapper);

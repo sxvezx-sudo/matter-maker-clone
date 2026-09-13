@@ -1,6 +1,4 @@
-export function renderCollection(collectionData) {
-    const collectionList = document.querySelector(".collection-list");
-    collectionList.innerHTML = "";
+export function createCollection(collectionData) {
 
     // Create Elements // 
     const collection = document.createElement("article");
@@ -33,8 +31,11 @@ export function renderCollection(collectionData) {
     // Text Contnet //
     btn.textContent = "Buy Now";
 
+    // Set Data //
+    collection.dataset.collectionId = collectionData.id
+
     // Append them //
     videoWrapper.append(video,btn);
     collection.append(videoWrapper, collectionSlider);
-    collectionList.append(collection);
+    return collection
 }
