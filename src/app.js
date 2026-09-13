@@ -4,45 +4,61 @@ import { renderCategory } from "./ui/productCategory.js"
 import { getProducts } from "./data/products.js"
 import { getCollectionData,
          getCollection } from "./data/collections.js"
+
+// Get Products Data && Collections Data //
 const products = getProducts()
-console.log(products)
 const collectionData = getCollectionData()
-console.log(collectionData)
+
+// Get Array of Collection //
 const collections = getCollection(products, collectionData)
-console.log(collections)
+
+// DOM Query //
 const collectionList = document.querySelector(".collection-list")
-collectionList.innerHTML = ""
+collectionList.innerHTML = "";
 const category = document.querySelector(".category");
+category.innerHTML = "";
 
-window.addEventListener("keyup", (e) => {
-    if(e.key !== "Enter") { return };
+document.addEventListener("DOMContentLoaded", () => {
 
-    collections.forEach(col => {
-        const collection = (createCollection(col))
-        console.log(collection)
-        collectionList.append(collection);
-        renderCategory()
+    // Render UIs //
+    collections.forEach(collection => {
 
-        const products = col.products;
-        const slider = collection.querySelector(".collection__slider");
+        // Render Collection // 
+        const collectionItem = createCollection(collection);
+        collectionList.append(collectionItem);
 
-        products.forEach(pd => {
-            const card = createProductCard(pd);
-            slider.append(card)
-        })
-    })
-})
+        // Render Product Card //
+        const products = collection.products;
+        const sliderListMap = document.querySelectorAll(".collection__slider");
+        products.forEach(product => {
+            const sliderItem = createProductCard(product);
+            sliderListMap.forEach(sliderList => {
+                sliderList.append(sliderItem);
+            });
+        });
+    });
+
+    // Add Events Listener Hover Card Interaction //
+    const productImages = document.querySelectorAll(".product-card__img-wrapper");
+
+    productImages.forEach(card => {
+        card.addEventListener("mouseenter", (e) => {
+            const classList = e.target.classList;
+            if(classList !== "product-card__img-wrapper") { return }
+
+            const mainImg = e.target.querySelector("img");
+            console.log(mainImg)
+            mainImg.classList.add("product-card__img--fade");
+        });
+        card.addEventListener("mouseleave", (e) => {
+            const classList = e.target.classList;
+            if(classList !== "product-card__img-wrapper") { return }
+
+            const mainImg = e.target.querySelector("img");
+            mainImg.classList.remove("product-card__img--fade");
+        });
+    });
+});
 
 
-const sliderItem = document.querySelectorAll(".collection__slide-item");
 
-sliderItem.forEach(item => {
-    item.addEventListener("mouseenter", (e) => {
-        const img = e.target.querySelector(".product-card__img");
-        img.classList.add("product-card__img--fade");
-        
-    })
-    item.addEventListener("mouseleave", (e) => {
-        
-    })
-})
