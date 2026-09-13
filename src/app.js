@@ -18,7 +18,7 @@ collectionList.innerHTML = "";
 const category = document.querySelector(".category");
 category.innerHTML = "";
 
-document.addEventListener("DOMContentLoaded", () => {
+const handleDocumentLoaded = () => {
 
     // Render UIs //
     collections.forEach(collection => {
@@ -58,7 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
             mainImg.classList.remove("product-card__img--fade");
         });
     });
-});
+};
+
+document.addEventListener("DOMContentLoaded", handleDocumentLoaded)
 
 
 

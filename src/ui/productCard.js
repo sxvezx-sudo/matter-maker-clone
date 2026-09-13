@@ -47,7 +47,7 @@ export function createProductCard(product) {
 
     // Text Content //
     name.textContent = product.name;
-    price.textContent = `${product.price} THB`;
+    price.textContent = `${product.price.toLocaleString()} THB`;
 
     // Appemd them //
     imgWrapper.append(img, imgHover);
