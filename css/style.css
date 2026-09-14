@@ -9,3 +9,5 @@
 
 @import url(./component/product-card.css);
 @import url(./component/button.css);
+
+@import url(/css/layout/productDetail.css);

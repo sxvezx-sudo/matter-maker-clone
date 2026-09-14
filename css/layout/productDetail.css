@@ -1,0 +1,224 @@
+.product-detail__container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+}
+
+.product-detail__slider-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+/* ปรับ Wrapper: ตัด display: grid และ overflow-x ออก */
+.product-detail__slider-list {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ปรับ Item: ลบ flex: 0 0 361.667px ออก ให้ Swiper คำนวณความกว้างเอง */
+.product-detail__slider-item {
+    height: 100%;
+}
+
+.product-detail__img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-detail__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-detail__content-container {
+    width: 100%;
+    min-width: 0;
+}
+
+.product-detail__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 42rem;
+    margin-inline: auto;
+    padding-block: var(--spacing-rg);
+
+    gap: var(--spacing-xs);
+}
+
+.product-detail__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.product-detail__title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+}
+
+.product-detail__icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--spacing-xs);
+}
+
+.product-detail__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    
+    border: 0px;
+    height: 20px;
+    width: 20px;
+
+    outline: 0px;
+    background-color: var(--bg-transparent);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    
+    cursor: pointer;
+}
+
+.product-detail__icon {
+    flex-shrink: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.product-detail__price {
+    display: flex;
+
+    width: 100%;
+
+    font-size: var(--font-size-rg);
+    font-weight: var(--font-weight-medium);
+}
+
+.product-detail__size-list {
+    display: flex;
+    justify-content: start;
+
+    width: 100%;
+
+    gap: var(--spacing-xs);
+}
+
+.product-detail__size-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0px;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+    text-decoration: underline;
+    
+    outline: 0px;
+    background-color: var(--bg-transparent);
+
+    cursor: pointer;
+}
+
+.product-detail__size-guide,
+.product-detail__find-store {
+    align-self: start;
+    justify-self: start;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px;
+    font-size: var(--font-size-rg);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-light);
+
+    outline: 0px;
+    background-color: var(--bg-transparent);
+
+    cursor: pointer;
+}
+
+.size-guide__icon-wrapper,
+.find-store__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    
+    height: 16px;
+    width: 16px;
+
+    aspect-ratio: 1 / 1;
+    overflow: hidden;   
+}
+
+.size-guide__icon,
+.find-store__icon {
+    stroke-width: 1px;
+}
+
+.product-detail__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    border: var(--border-width) solid var(--border-primary);
+    padding: var(--spacing-sm);
+    margin-block: var(--spacing-rg);
+
+    font-size: var(--font-size-rg);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+
+    outline: 0px;
+    background-color: var(--bg-transparent);
+    cursor: pointer;
+}
+
+.product-detail__slider-container .product-detail__pagination {
+    position: unset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-block: 1rem;
+    gap: var(--spacing-xs);
+}
+
+.product-detail__pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background-color: var(--bg-transparent);
+    border: var(--border-width) solid var(--border-primary);
+    margin: 0 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* เอฟเฟกต์ตอนขยายจุด */
+}
+
+.product-detail__pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: black;
+}

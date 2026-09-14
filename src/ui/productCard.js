@@ -32,7 +32,7 @@ export function createProductCard(product) {
     iconWrapper.classList.add("product-card__icon-wrapper");
     
     // Set Attribute // 
-    imgWrapper.setAttribute("href", "#");
+    imgWrapper.href = `/product.html?id=${product.id}`
     img.setAttribute("src", product.images.main);
     img.setAttribute("alt", product.name);
     imgHover.setAttribute("src", product.images.front);
@@ -60,6 +60,10 @@ export function createProductCard(product) {
         const mainImg = imgWrapper.querySelector("img");
         mainImg.classList.remove("product-card__img--fade");
     });
+
+    imgWrapper.addEventListener("click", (e) => {
+
+    })
 
     // Appemd them //
     imgWrapper.append(img, imgHover);
