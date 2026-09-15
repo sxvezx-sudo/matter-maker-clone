@@ -2,12 +2,13 @@
 @import url(./base/reset.css);
 @import url(./base/variable.css);
 
-@import url(./layout/page.css);
 @import url(./layout/header.css);
 @import url(./layout/main.css);
 @import url(./layout/footer.css);
 
 @import url(./component/product-card.css);
 @import url(./component/button.css);
+@import url(./component/page.css);
 
-@import url(/css/layout/productDetail.css);
+@import url(/css/pages/productDetail.css);
+@import url(/css/pages/cart.css);

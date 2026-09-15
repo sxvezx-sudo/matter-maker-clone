@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MATTER MAKER CLONE</title>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide": "https://unpkg.com/lucide@latest/dist/esm/lucide.js",
+        "swiper": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="page">
+        <nav class="navbar">
+            <div class="navbar__left">
+                <a href="#" class="navbar__icon-wrapper">
+                    <i data-lucide="menu" class="navbar__icon"></i></a>
+            </div>
+            <div class="navbar__center">
+                <a href="index.html">
+                    <h1>SHOPPING CART</h1>
+                </a>
+            </div>
+            <div class="navbar__right">
+                <a href="#" class="navbar__icon-wrapper" aria-label="search">
+                    <i data-lucide="search" class="navbar__icon"></i></a>
+                <a href="#" class="navbar__icon-wrapper" aria-label="favourite">
+                    <i data-lucide="heart" class="navbar__icon"></i></a>
+                <a href="#" class="navbar__icon-wrapper" aria-label="profile">
+                    <i data-lucide="user" class="navbar__icon"></i></a>
+                <a href="cart.html" class="navbar__icon-wrapper" aria-label="cart">
+                    <i data-lucide="shopping-bag" class="navbar__icon"></i></a>
+            </div>
+        </nav>
+    </div>    
+
+    <script type="module" src="/src/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons()
+    </script>
+</body>
+</html>

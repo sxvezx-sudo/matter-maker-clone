@@ -7,7 +7,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p001/main.jpg",
                 front: "/assets/image/products/p001/front.jpg",
-                back: "/assets/image/products/p001/back.jpg",
+                detail: "/assets/image/products/p001/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -18,7 +18,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p002/main.jpg",
                 front: "/assets/image/products/p002/front.jpg",
-                back: "/assets/image/products/p002/back.jpg",
+                detail: "/assets/image/products/p002/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -29,7 +29,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p003/main.jpg",
                 front: "/assets/image/products/p003/front.jpg",
-                back: "/assets/image/products/p003/back.jpg",
+                detail: "/assets/image/products/p003/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -40,7 +40,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p004/main.jpg",
                 front: "/assets/image/products/p004/front.jpg",
-                back: "/assets/image/products/p004/back.jpg",
+                detail: "/assets/image/products/p004/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -51,7 +51,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p005/main.jpg",
                 front: "/assets/image/products/p005/front.jpg",
-                back: "/assets/image/products/p005/back.jpg",
+                detail: "/assets/image/products/p005/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -62,7 +62,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p006/main.jpg",
                 front: "/assets/image/products/p006/front.jpg",
-                back: "/assets/image/products/p006/back.jpg",
+                detail: "/assets/image/products/p006/detail001.jpg",
             },
             collectionSlug: "haunted-dollhouse"
         },
@@ -73,7 +73,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p007/main.jpg",
                 front: "/assets/image/products/p007/front.jpg",
-                back: "/assets/image/products/p007/back.jpg",
+                detail: "/assets/image/products/p007/detail001.jpg",
             },
             collectionSlug: "mmcrew"
         },
@@ -84,7 +84,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p008/main.jpg",
                 front: "/assets/image/products/p008/front.jpg",
-                back: "/assets/image/products/p008/back.jpg",
+                detail: "/assets/image/products/p008/detail001.jpg",
             },
             collectionSlug: "mmcrew"
         },
@@ -95,7 +95,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p009/main.jpg",
                 front: "/assets/image/products/p009/front.jpg",
-                back: "/assets/image/products/p009/back.jpg",
+                detail: "/assets/image/products/p009/detail001.jpg",
             },
             collectionSlug: "mmcrew"
         },
@@ -106,7 +106,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p010/main.jpg",
                 front: "/assets/image/products/p010/front.jpg",
-                back: "/assets/image/products/p010/back.jpg",
+                detail: "/assets/image/products/p010/detail001.jpg",
             },
             collectionSlug: "mmcrew"
         },
@@ -117,7 +117,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p011/main.jpg",
                 front: "/assets/image/products/p011/front.jpg",
-                back: "/assets/image/products/p011/back.jpg",
+                detail: "/assets/image/products/p011/detail001.jpg",
             },
             collectionSlug: "mmcrew"
         },
@@ -128,7 +128,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p012/main.jpg",
                 front: "/assets/image/products/p012/front.jpg",
-                back: "/assets/image/products/p012/back.jpg",
+                detail: "/assets/image/products/p012/detail001.jpg",
             },
             collectionSlug: "hotdog"
         },
@@ -139,7 +139,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p013/main.jpg",
                 front: "/assets/image/products/p013/front.jpg",
-                back: "/assets/image/products/p013/back.jpg",
+                detail: "/assets/image/products/p013/detail001.jpg",
             },
             collectionSlug: "hotdog"
         },
@@ -150,7 +150,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p014/main.jpg",
                 front: "/assets/image/products/p014/front.jpg",
-                back: "/assets/image/products/p014/back.jpg",
+                detail: "/assets/image/products/p014/detail001.jpg",
             },
             collectionSlug: "hotdog"
         },
@@ -161,7 +161,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p015/main.jpg",
                 front: "/assets/image/products/p015/front.jpg",
-                back: "/assets/image/products/p015/back.jpg",
+                detail: "/assets/image/products/p015/detail001.jpg",
             },
             collectionSlug: "hotdog"
         },
@@ -172,7 +172,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p016/main.jpg",
                 front: "/assets/image/products/p016/front.jpg",
-                back: "/assets/image/products/p016/back.jpg",
+                detail: "/assets/image/products/p016/detail001.jpg",
             },
             collectionSlug: "hotdog"
         },
@@ -183,7 +183,7 @@ export function getProducts() {
             images: {
                 main: "/assets/image/products/p017/main.jpg",
                 front: "/assets/image/products/p017/front.jpg",
-                back: "/assets/image/products/p017/back.jpg",
+                detail: "/assets/image/products/p017/detail001.jpg",
             },
             collectionSlug: "hotdog"
         }

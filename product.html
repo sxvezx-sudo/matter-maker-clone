@@ -1,117 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Product Detail</title>
     <script type="importmap">
-    {
-      "imports": {
-        "lucide": "https://unpkg.com/lucide@latest/dist/esm/lucide.js",
-        "swiper": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
+      {
+        "imports": {
+          "lucide": "https://unpkg.com/lucide@latest/dist/esm/lucide.js",
+          "swiper": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
+        }
       }
-    }
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="page">
-        <nav class="navbar">
-            <div class="navbar__left">
-                <a href="#" class="navbar__icon-wrapper">
-                    <i data-lucide="menu" class="navbar__icon"></i></a>
+      <nav class="navbar">
+        <div class="navbar__left">
+          <a href="#" class="navbar__icon-wrapper">
+            <i data-lucide="menu" class="navbar__icon"></i
+          ></a>
+        </div>
+        <div class="navbar__center">
+          <a href="index.html" class="navbar__logo-wrapper">
+            <img
+              src="/assets/image/logo/matter-maker-logo-text.png"
+              alt=""
+              class="navbar__logo"
+            />
+          </a>
+        </div>
+        <div class="navbar__right">
+          <a href="#" class="navbar__icon-wrapper" aria-label="search">
+            <i data-lucide="search" class="navbar__icon"></i
+          ></a>
+          <a href="#" class="navbar__icon-wrapper" aria-label="favourite">
+            <i data-lucide="heart" class="navbar__icon"></i
+          ></a>
+          <a href="#" class="navbar__icon-wrapper" aria-label="profile">
+            <i data-lucide="user" class="navbar__icon"></i
+          ></a>
+          <a href="cart.html" class="navbar__icon-wrapper" aria-label="cart">
+            <i data-lucide="shopping-bag" class="navbar__icon"></i
+          ></a>
+        </div>
+      </nav>
+      <main class="product-detail__container">
+        <div class="product-detail__slider-container swiper">
+          <ul class="product-detail__slider-list swiper-wrapper">
+            <li class="product-detail__slider-item swiper-slide">
+              <div class="product-detail__img-wrapper">
+                <img
+                  src="/assets/image/products/p001/front.jpg"
+                  alt=""
+                  class="product-detail__img"
+                />
+              </div>
+            </li>
+
+            <li class="product-detail__slider-item swiper-slide">
+              <div class="product-detail__img-wrapper">
+                <img
+                  src="/assets/image/products/p001/main.jpg"
+                  alt=""
+                  class="product-detail__img"
+                />
+              </div>
+            </li>
+
+            <li class="product-detail__slider-item swiper-slide">
+              <div class="product-detail__img-wrapper">
+                <img
+                  src="/assets/image/products/p001/detail001.jpg"
+                  alt=""
+                  class="product-detail__img"
+                />
+              </div>
+            </li>
+
+            <li class="product-detail__slider-item swiper-slide">
+              <div class="product-detail__img-wrapper">
+                <img
+                  src="/assets/image/products/p001/detail002.jpg"
+                  alt=""
+                  class="product-detail__img"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-detail__pagination swiper-pagination"></div>
+
+        <div class="product-detail__content-container">
+          <div class="product-detail__content-wrapper">
+            <div class="product-detail__title-wrapper">
+              <h1 class="product-detail__title">Double Layer Shorts</h1>
+              <div class="product-detail__icon-list">
+                <button type="button" class="product-detail__icon-wrapper">
+                  <i data-lucide="share" class="product-detail__icon"></i>
+                </button>
+                <button type="button" class="product-detail__icon-wrapper">
+                  <i data-lucide="heart" class="product-detail__icon"></i>
+                </button>
+              </div>
             </div>
-            <div class="navbar__center">
-                <a href="#" class="navbar__logo-wrapper">
-                    <img src="/assets/image/logo/matter-maker-logo-text.png" alt="" class="navbar__logo">
-                </a>
-            </div>
-            <div class="navbar__right">
-                <a href="#" class="navbar__icon-wrapper" aria-label="search">
-                    <i data-lucide="search" class="navbar__icon"></i></a>
-                <a href="#" class="navbar__icon-wrapper" aria-label="favourite">
-                    <i data-lucide="heart" class="navbar__icon"></i></a>
-                <a href="#" class="navbar__icon-wrapper" aria-label="profile">
-                    <i data-lucide="user" class="navbar__icon"></i></a>
-                <a href="#" class="navbar__icon-wrapper" aria-label="cart">
-                    <i data-lucide="shopping-bag" class="navbar__icon"></i></a>
-            </div>
-        </nav>
-        <main class="product-detail__container">
-            <div class="product-detail__slider-container swiper">
-                <ul class="product-detail__slider-list swiper-wrapper">
 
-                    <li class="product-detail__slider-item swiper-slide">
-                        <div class="product-detail__img-wrapper">
-                            <img src="/assets/image/products/p001/front.jpg" alt="" class="product-detail__img">
-                        </div>
-                    </li>
+            <span class="product-detail__price">1,200 THB</span>
 
-                    <li class="product-detail__slider-item swiper-slide">
-                        <div class="product-detail__img-wrapper">
-                            <img src="/assets/image/products/p001/main.jpg" alt="" class="product-detail__img">
-                        </div>
-                    </li>
-
-                    <li class="product-detail__slider-item swiper-slide">
-                        <div class="product-detail__img-wrapper">
-                            <img src="/assets/image/products/p001/detail001.jpg" alt="" class="product-detail__img">
-                        </div>
-                    </li>
-
-                    <li class="product-detail__slider-item swiper-slide">
-                        <div class="product-detail__img-wrapper">
-                            <img src="/assets/image/products/p001/detail002.jpg" alt="" class="product-detail__img">
-                        </div>
-                    </li>
-
-                </ul>                
-                <div class="swiper-pagination product-detail__pagination"></div>
+            <div class="product-detail__size-list">
+              <button type="button" class="product-detail__size-item">S</button>
+              <button type="button" class="product-detail__size-item">M</button>
+              <button type="button" class="product-detail__size-item">L</button>
             </div>
 
-            <div class="product-detail__content-container">
-                <div class="product-detail__content-wrapper">
-                    <div class="product-detail__title-wrapper">
-                        <h1 class="product-detail__title">Double Layer Shorts</h1>
-                        <div class="product-detail__icon-list">
-                            <button type="button" class="product-detail__icon-wrapper">
-                                <i data-lucide="share" class="product-detail__icon"></i>
-                            </button>
-                            <button type="button" class="product-detail__icon-wrapper">
-                                <i data-lucide="heart" class="product-detail__icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <span class="product-detail__price">1,200 THB</span>
-
-                    <div class="product-detail__size-list">
-                        <button type="button" class="product-detail__size-item">S</button>
-                        <button type="button" class="product-detail__size-item">M</button>
-                        <button type="button" class="product-detail__size-item">L</button>
-                    </div>
-
-                    <button type="button" class="product-detail__size-guide">
-                        <span class="size-guide__text">Size Guide</span>
-                        <div class="size-guide__icon-wrapper">
-                            <i data-lucide="plus" class="size-guide__icon"></i>
-                        </div>
-                    </button>
-                    <button type="button" class="product-detail__find-store">
-                        <span class="find-store__text">Find store</span>
-                        <div class="find-store__icon-wrapper">
-                            <i data-lucide="plus" class="find-store__icon"></i>
-                        </div>
-                    </button>
-                    <button type="submit" class="product-detail__submit">ADD TO CART</button>                    
-                </div>
-            </div>
-        </main>
+            <button type="button" class="product-detail__size-guide">
+              <span class="size-guide__text">Size Guide</span>
+              <div class="size-guide__icon-wrapper">
+                <i data-lucide="plus" class="size-guide__icon"></i>
+              </div>
+            </button>
+            <button type="button" class="product-detail__find-store">
+              <span class="find-store__text">Find store</span>
+              <div class="find-store__icon-wrapper">
+                <i data-lucide="plus" class="find-store__icon"></i>
+              </div>
+            </button>
+            <button type="submit" class="product-detail__submit">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </main>
     </div>
     <script type="module" src="/src/productDetailApp.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
-        lucide.createIcons()
+      lucide.createIcons();
     </script>
-</body>
+  </body>
 </html>

@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - var(--nav-height));
+    height: calc(100vh - var(--nav-height) )
 }
 
 /* ปรับ Wrapper: ตัด display: grid และ overflow-x ออก */
@@ -197,7 +197,7 @@
     cursor: pointer;
 }
 
-.product-detail__slider-container .product-detail__pagination {
+.product-detail__container .product-detail__pagination {
     position: unset;
 
     display: flex;
